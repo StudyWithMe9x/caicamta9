@@ -6,12 +6,12 @@ Set-ItemProperty -path "C:\ProgramData\TechSmith\Camtasia Studio 9\RegInfo.ini" 
 <# 3. remove folder sample projects#>
 rm 'C:\ProgramData\TechSmith\Camtasia Studio 9\Sample_Projects' -r -force
 <# 4. insert host file#>
-cmd 
-echo 127.0.0.1 www.techsmith.com >> %WINDIR%\System32\Drivers\Etc\Hosts
-echo 127.0.0.1 activation.cloud.techsmith.com >> %WINDIR%\System32\Drivers\Etc\Hosts
-echo 127.0.0.1 oscount.techsmith.com >> %WINDIR%\System32\Drivers\Etc\Hosts
-echo 127.0.0.1 updater.techsmith.com >> %WINDIR%\System32\Drivers\Etc\Hosts
-echo 127.0.0.1 camtasiatudi.techsmith.com >> %WINDIR%\System32\Drivers\Etc\Hosts
-echo 127.0.0.1 tsccloud.cloudapp.net >> %WINDIR%\System32\Drivers\Etc\Hosts
-echo 127.0.0.1 assets.cloud.techsmith.com >> %WINDIR%\System32\Drivers\Etc\Hosts
-echo 127.0.0.1 www.techsmith.com >> %WINDIR%\System32\Drivers\Etc\Hosts
+ 
+cmd echo 127.0.0.1 www.techsmith.com >> %WINDIR%\System32\Drivers\Etc\Hosts
+cmd echo 127.0.0.1 activation.cloud.techsmith.com >> %WINDIR%\System32\Drivers\Etc\Hosts
+cmd echo 127.0.0.1 oscount.techsmith.com >> %WINDIR%\System32\Drivers\Etc\Hosts
+cmd echo 127.0.0.1 updater.techsmith.com >> %WINDIR%\System32\Drivers\Etc\Hosts
+cmd echo 127.0.0.1 camtasiatudi.techsmith.com >> %WINDIR%\System32\Drivers\Etc\Hosts
+cmd echo 127.0.0.1 tsccloud.cloudapp.net >> %WINDIR%\System32\Drivers\Etc\Hosts
+cmd echo 127.0.0.1 assets.cloud.techsmith.com >> %WINDIR%\System32\Drivers\Etc\Hosts
+cmd echo 127.0.0.1 www.techsmith.com >> %WINDIR%\System32\Drivers\Etc\Hosts
