@@ -26,3 +26,4 @@ Add-HostEntry camtasiatudi.techsmith.com 127.0.0.1
 Add-HostEntry tsccloud.cloudapp.net 127.0.0.1
 Add-HostEntry assets.cloud.techsmith.com 127.0.0.1
 Add-HostEntry www.techsmith.com 127.0.0.1
+exit
