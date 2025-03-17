@@ -16,6 +16,13 @@ cmd echo 127.0.0.1 tsccloud.cloudapp.net >> %WINDIR%\System32\Drivers\Etc\Hosts
 cmd echo 127.0.0.1 assets.cloud.techsmith.com >> %WINDIR%\System32\Drivers\Etc\Hosts
 cmd echo 127.0.0.1 www.techsmith.com >> %WINDIR%\System32\Drivers\Etc\Hosts
 #>
-
-install-module PsHosts
-Add-HostEntry 127.0.0.1 www.techsmith.com
+Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
+install-module PsHosts -Force
+Add-HostEntry www.techsmith.com 127.0.0.1
+Add-HostEntry activation.cloud.techsmith.com 127.0.0.1
+Add-HostEntry oscount.techsmith.com 127.0.0.1
+Add-HostEntry updater.techsmith.com 127.0.0.1
+Add-HostEntry camtasiatudi.techsmith.com 127.0.0.1
+Add-HostEntry tsccloud.cloudapp.net 127.0.0.1
+Add-HostEntry assets.cloud.techsmith.com 127.0.0.1
+Add-HostEntry www.techsmith.com 127.0.0.1
