@@ -5,6 +5,7 @@ $ProgressPreference = 'SilentlyContinue'; Invoke-WebRequest "https://github.com/
 Set-ItemProperty -path "C:\ProgramData\TechSmith\Camtasia Studio 9\RegInfo.ini" -name IsReadOnly $true
 <# 3. remove folder sample projects#>
 rm 'C:\ProgramData\TechSmith\Camtasia Studio 9\Sample_Projects' -r -force
+echo "Chúc mừng bạn đã cài Camtasia 9 thành công, vui lòng mở Camtasia Recorder lên để quay màn hình"
 <# 4. insert host file#>
 <# 
 cmd echo 127.0.0.1 www.techsmith.com >> %WINDIR%\System32\Drivers\Etc\Hosts
